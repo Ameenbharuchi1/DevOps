@@ -44,3 +44,5 @@
 | `ln`    | Create links between files.       | `-s`: Create symbolic (soft) links.  | `ln -s source_file link_name` creates a symbolic link named "link_name" pointing to "source_file". |
 | `find`  | Search for files and directories. | `-name`: Search by filename.         | `find /path/to/search -name "*.txt"` searches for all files with the extension ".txt" in the specified directory. |
 |         |                                   | `-type`: Search by file type.        |                                                                                              |
+| `kill -9`| Kills processes using the PID    |                                      | `kill -9 5834` kills the process with the PID 5834                                           |
+| `ps auxf` | Lists all processes running     |                                      | `ps auxf`|
