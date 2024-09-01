@@ -29,7 +29,10 @@
 |         |                                          |                                            | `tail -n 5 file.txt` displays the last 5 lines of the file "file.txt".                      |
 | `echo`  | Display a line of text or a string.      | `-n`: Do not output the trailing newline.   | `echo "Hello, World!"` outputs `Hello, World!`.                                             |
 |         |                                          | `>>` : Can be used to append the line into a file | `echo "Hello World!"` >> "file.txt" (If file doesnt exist it will be created)                                                 
-|         |                                          | `>` : Can be used to overwrite anything in the file| `echo "Hello World!"` > "file.txt" (If file doesnt exist it will be created)
+|         |                                          | `>` : Can be used to overwrite anything in the file| `echo "Hello World!"` > "file.txt" (If file doesnt exist it will be created)|
+| `grep`  | Search for patterns in files.            | `-i`: Ignore case when searching.           | `grep "pattern" file.txt` searches for "pattern" in `file.txt` and displays matching lines.  |
+|         |                                          | `-r`: Recursively search directories.       | `grep -r "pattern" /path/to/directory` searches for "pattern" in all files under the specified directory. |
+|         |                                          | `-v`: Invert match (display non-matching lines). | `grep -v "pattern" file.txt` displays lines that do not match "pattern" in `file.txt`.     
 
 ## System and Utility Commands
 
