@@ -14,6 +14,7 @@
 | `rm`    | Remove files and directories.     | `-r`: Remove directories recursively.      | `rm file.txt` deletes the file named "file.txt".                                             |
 |         |                                   | `-f`: Force removal without confirmation.  | `rm -r my_directory` deletes the directory "my_directory" and its contents.                  |
 |         |                                   |                                            | `rm -f file.txt` forcefully deletes the file "file.txt" without confirmation.                |
+| `lsof`  | List of open files                |                                            | `lsof /var/log/bad.log` will display list of processes that have this file open to determine what processes are writing to it  |
 | `cp`    | Copy files and directories.       | `-r`: Copy directories recursively.        | `cp -r directory destination` copies the directory "directory" and its contents to the specified destination. |
 |         |                                   |                                            | `cp file.txt destination` copies the file "file.txt" to the specified destination.            |
 | `mv`    | Move or rename files and directories. |                                        | `mv file.txt new_name.txt` renames the file "file.txt" to "new_name.txt".                    |
