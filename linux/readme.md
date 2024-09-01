@@ -10,6 +10,7 @@
 | `cd`    | Change directory.                 |                                            | `cd /path/to/directory` changes the current directory to the specified path.                 |
 | `pwd`   | Print current working directory.  |                                            | `pwd` displays the current working directory.                                                |
 | `mkdir` | Create a new directory.           |                                            | `mkdir my_directory` creates a new directory named "my_directory".                           |
+| `rmdir` | Removes a directory               |                                            | `rmdir my_directory` removes a directory named "my_directory".                               |
 | `rm`    | Remove files and directories.     | `-r`: Remove directories recursively.      | `rm file.txt` deletes the file named "file.txt".                                             |
 |         |                                   | `-f`: Force removal without confirmation.  | `rm -r my_directory` deletes the directory "my_directory" and its contents.                  |
 |         |                                   |                                            | `rm -f file.txt` forcefully deletes the file "file.txt" without confirmation.                |
