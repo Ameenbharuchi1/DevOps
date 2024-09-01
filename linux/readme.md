@@ -1,6 +1,6 @@
 # Linux learning
 
-File and Directory Commands
+## File and Directory Commands
 
 | Command | Description                           | Options                              | Examples                                                                                       |
 |---------|---------------------------------------|--------------------------------------|------------------------------------------------------------------------------------------------|
