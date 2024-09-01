@@ -23,7 +23,6 @@ File and Directory Commands
 |         |                                       |                                      | `head -n 5 file.txt` displays the first 5 lines of the file "file.txt".                         |
 | `tail`  | Display the last few lines of a file. | `-n`: Specify the number of lines to display. | `tail file.txt` shows the last 10 lines of the file "file.txt".                             |
 |         |                                       |                                      | `tail -n 5 file.txt` displays the last 5 lines of the file "file.txt".                          |
-| `ln`    | Create links between files.           | `-s`: Create symbolic (soft) links.  | `ln -s source_file link_name` creates a symbolic link named "link_name" pointing to "source_file". |
 | `find`  | Search for files and directories.     | `-name`: Search by filename.         | `find /path/to/search -name "*.txt"` searches for all files with the extension ".txt" in the specified directory. |
 |         |                                       | `-type`: Search by file type.        |                                                                                                 |
 
