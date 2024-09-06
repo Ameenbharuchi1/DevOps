@@ -33,8 +33,10 @@
 |         |                                          | `>>` : Can be used to append the line into a file | `echo "Hello World!"` >> "file.txt" (If file doesnt exist it will be created)                                                 
 |         |                                          | `>` : Can be used to overwrite anything in the file| `echo "Hello World!"` > "file.txt" (If file doesnt exist it will be created)|
 | `grep`  | Search for patterns in files.            | `-i`: Ignore case when searching.           | `grep "pattern" file.txt` searches for "pattern" in `file.txt` and displays matching lines.  |
-|         |                                          | `-r`: Recursively search directories.       | `grep -r "pattern" /path/to/directory` searches for "pattern" in all files under the specified directory. |
-|         |                                          | `-v`: Invert match (display non-matching lines). | `grep -v "pattern" file.txt` displays lines that do not match "pattern" in `file.txt`.     
+|         |                                          | `-r`: Recursively search directories.       | `grep -r "pattern" /path/to/directory` searches for "pattern" in all files under the 
+specified directory. |
+|         |                                          | `-v`: Invert match (display non-matching lines). | `grep -v "pattern" file.txt` displays lines that do not match "pattern" in `file.txt`.  
+|         |                                          | `-l`: Filename Matches                       | `grep -rl "wordsearch" f/directory ` displays filenames that contain wordsearch
 
 ## System and Utility Commands
 
