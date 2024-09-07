@@ -22,3 +22,15 @@ do
 done
 
 ls -lS *.txt
+
+echo "Checking if any of the files in the dir contains the word 'Victory'"
+
+victory_file=$(grep -rl "Victory" "/Users/ameenbharuchi/Desktop/CoderCO/DevOps/Arena_Boss")
+
+if [ -n "$victory_file" ];then
+    mkdir -p /Users/ameenbharuchi/Desktop/CoderCO/DevOps/Victory
+    mv $victory_file "/Users/ameenbharuchi/Desktop/CoderCO/DevOps/Victory"
+else
+    echo "didnt find any matching word"
+fi
+
