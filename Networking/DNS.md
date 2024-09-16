@@ -76,5 +76,22 @@ The process of converting domain names to IP addresses involves multiple steps a
 
 ![alt text](image.png)
 
+## Domain Registrar vs DNS Hosting Provider
+
+### **Registrar**
+- Allows you to purchase and register domains.
+- Communicates with the **TLD registry** to manage TLD registrations.
+- Examples: Route53, GoDaddy, CloudFlare.
+
+### **Hosting Provider**
+- Operates DNS nameservers that manage DNS zones.
+- Allows you to manage the DNS records within the zones.
+- Examples: Route53 zones, etc.
+
+### **Process Overview**:
+When you purchase a domain, you need a DNS zone to be hosted on a DNS nameserver. The process varies depending on whether the hosting provider is the same as the registrar:
+
+- **If they are the same company**, the DNS zone is automatically created and hosted.
+- **If they are different companies**, you will need to provide the nameserver information where the DNS zone is already hosted.
 
 
