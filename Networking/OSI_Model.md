@@ -66,3 +66,55 @@ The OSI (Open Systems Interconnection) model is a conceptual framework used to u
 
 #### Limitation of Layer 1:
 - There is no device addressing at this layer, meaning all data is processed by all devices. This issue is resolved by the **Data Link Layer**.
+
+
+# OSI Model Example - POV of Sender
+(User sends a POST request to an HTTP web page)
+
+### Layer 7: **Application Layer**
+- **Action**: POST request with JSON data is sent to the HTTPS server.
+
+### Layer 6: **Presentation Layer**
+- **Action**: The JSON is serialized into flat byte data strings, converting it into a format that can be transmitted over the network.
+
+### Layer 5: **Session Layer**
+- **Action**: Requests to establish a TCP/TLS connection for secure communication via HTTPS.
+
+### Layer 4: **Transport Layer**
+- **Action**: Sends a SYN request to the target port 443 (HTTPS) as part of the TCP handshake process.
+
+### Layer 3: **Network Layer**
+- **Action**: The SYN request is placed in an IP packet, which now contains the source and destination IP addresses.
+
+### Layer 2: **Data Link Layer**
+- **Action**: Each packet is placed into a frame, adding the source and destination MAC addresses to help guide the data across local networks to its destination.
+
+### Layer 1: **Physical Layer**
+- **Action**: Data is converted into a physical signal, such as radio signals for Wi-Fi or light pulses for fiber optics.
+
+---
+
+# OSI Model Example - POV of Receiver
+(User sends a POST request to an HTTP web page)
+
+### Layer 1: **Physical Layer**
+- **Action**: Incoming signals (radio, electric, or light) are converted into bits that the receiving computer can understand.
+
+### Layer 2: **Data Link Layer**
+- **Action**: The bits from the physical layer are assembled into a frame, ensuring data can travel across the local network.
+
+### Layer 3: **Network Layer**
+- **Action**: The frame from the Data Link Layer is assembled into an IP packet.
+
+### Layer 4: **Transport Layer**
+- **Action**: The IP packets from the Network Layer are assembled into TCP segments.
+
+### Layer 5: **Session Layer**
+- **Action**: The connection session is established or identified, involving the TCP 3-way handshake to confirm the session is valid and secure.
+
+### Layer 6: **Presentation Layer**
+- **Action**: The data is decrypted and decompressed, preparing it for the application layer.
+
+### Layer 7: **Application Layer**
+- **Action**: The HTTP request is processed and interpreted, displaying the response to the user accordingly.
+
