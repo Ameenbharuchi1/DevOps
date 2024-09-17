@@ -95,3 +95,39 @@ When you purchase a domain, you need a DNS zone to be hosted on a DNS nameserver
 - **If they are different companies**, you will need to provide the nameserver information where the DNS zone is already hosted.
 
 
+Here’s a single code snippet with all the content you provided, but restructured for clarity:
+
+```markdown
+# DNS Tools
+
+## nslookup: Basic DNS Query Tool
+- Command: `nslookup [domain]`
+- Example: 
+    ```bash
+    nslookup google.com
+    ```
+    Output:
+    ```
+    Server:         2a02:6b67:d900:5e00:daec:5eff:fe6c:f5d1
+    Address:        2a02:6b67:d900:5e00:daec:5eff:fe6c:f5d1#53
+
+    Non-authoritative answer:
+    Name:   google.com
+    Address: 172.217.16.238
+    ```
+
+- **Server**: The server you're going through to reach the destination (in this case, the router).
+- **Address**: Shows the port (53 in this case).
+- **Non-authoritative answer**: This indicates the address came from a cache, meaning it’s not definitive.
+
+---
+
+## dig: Advanced DNS Query Tool
+- Commands:
+    - `dig [domain]`
+    - `dig +short [domain]`
+    - `dig +short ns [domain]`
+
+- **dig** is more advanced compared to `nslookup`. It shows detailed information such as the query, time taken, the number of IP addresses, and more.
+
+```
