@@ -129,5 +129,3 @@ Here’s a single code snippet with all the content you provided, but restructur
     - `dig +short ns [domain]`
 
 - **dig** is more advanced compared to `nslookup`. It shows detailed information such as the query, time taken, the number of IP addresses, and more.
-
-```
